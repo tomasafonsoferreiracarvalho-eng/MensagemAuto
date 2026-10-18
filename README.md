@@ -77,7 +77,7 @@ Se existir um `registos.json` num formato antigo, o programa converte-o sozinho 
 ```
 .
 ├── main.py          # todo o código
-├── registos.json    # dados (não vai para o GitHub)
+├── registos.json    # dados (não se encontra em conjunto com o programa uma vez que é pessoal e difere de pessoa para pessoa)
 └── README.md
 ```
 
@@ -109,7 +109,6 @@ As funções principais em `main.py`:
 
 - O envio usa o [`pywhatkit`](https://pypi.org/project/pywhatkit/), que abre o WhatsApp Web no browser e envia a mensagem. Por isso o programa espera uns 15 segundos de cada vez que envia (`wait_time` em `enviar_whatsapp`).
 - Não é uma API oficial do WhatsApp, por isso depende do browser estar aberto e com sessão iniciada.
-- O número de telefone e o `registos.json` não devem ser públicos. Ver o `.gitignore`.
 
 ## Ideias para o futuro
 
